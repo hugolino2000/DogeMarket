@@ -2,6 +2,9 @@
 body{ 
   margin: 0;
  background-color:#cb9800  	;
+ height: 100vh;
+ width: 100%;
+ z-index: 2;
 }
 .header{
  display: flex;
@@ -12,20 +15,21 @@ body{
  overflow: hidden;
  object-fit: contain;
  padding: 2rem;
-position: -webkit-sticky;
-position: sticky;
-top: 0;
-z-index: 1;
-margin: 0 ;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  margin: 0 ;
+  height: 10vh;
 }
 nav{
 position: -webkit-sticky;
 position: sticky;
-top: 9.5rem;
-z-index: 2;
+top: 8.7rem;
+z-index: 1;
 background-color: burlywood;
 margin: 0;
-padding: 0.1rem;
+padding:0.1rem;
 margin-left: 1.8rem;
 border-bottom-left-radius: 2rem;
 
@@ -72,8 +76,8 @@ transition: 1000ms;
 
 .shop-container{
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(6vw, 24vw));
-  grid-template-rows: repeat(auto-fill, minmax(12.5vh, 50vh));
+  grid-template-columns: repeat(auto-fill,minmax(6vw, 18vw));
+  grid-template-rows: repeat(3, 40vh );
   object-fit: cover;
   break-inside: avoid;
   position: relative;
@@ -85,15 +89,38 @@ transition: 1000ms;
 
  
 }
+.cart-menu{
+  position: sticky;
+  font-size: 5rem;
+  bottom: 1rem;
+  background-color: #e1b303;
+  float: right;
+  border-radius: 1rem;
+ padding: 0.5rem;
+ margin-right: 3rem;
+
+  
+}
+.cart-menu:hover{
+  
+  cursor: pointer;
+}
+button{
+  text-decoration: none;
+  border:none;
+  background-color: #e1b303;
+  font-size: 5rem;
+}
+
 .information{
   font-size: 0;
    font-family: 'Chakra Petch', sans-serif;
     text-align: center;
     color: black;
+    transition: 0.5s;
 }
 .item-showcase{
   object-fit: fill;
-  height: 50vh;
   border-right: solid #cb9800 0.1rem;
   border-bottom: solid #cb9800 0.1rem;
   justify-self: stretch;
@@ -116,14 +143,14 @@ transition: 1000ms;
     transition: 0.5s;
 }
 .item-showcase img{
-  width: 23vw;
-  height: 40vh;
+  width: 15vw;
+  height: 30vh;
   transition: 1s;
   align-self: center;
 }
 .item-showcase:hover img {
-  width: 24vw;
-  height: 41vh;
+  width: 15vw;
+  height: 30vh;
   transition: 1s;
 }
 footer{
@@ -147,3 +174,44 @@ a:link{
 a:visited{
   text-decoration: none;
 }
+.dropbtn{
+  border: 0;
+  background-color: burlywood;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.dropbtn:hover, .dropbtn:focus{
+  background-color: rgb(202, 168, 123);
+  transition: 1s;
+}
+.dropdown{
+  position: relative;
+  display: inline-block;
+  font-family: 'Chakra Petch', sans-serif;
+  transition: 1s;
+}
+.dropdown-content{
+  display: none;
+  position: absolute;
+  min-width: 10vw;
+  z-index: 1;
+  font-family: 'Chakra Petch', sans-serif;
+  background-color: rgba(233, 192, 140, 0.76);
+  border-radius: 0.25rem;
+  transition: 1s;
+
+}
+.dropdown-content a{
+  display: block;
+}
+.dropdown-content a:hover{
+  background-color:rgb(202, 168, 123);
+  
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+  transition: 500ms;
+
+}
+.dropdown:hover .dropbtn {background-color: burlywood;}

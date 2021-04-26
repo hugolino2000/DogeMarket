@@ -10,16 +10,45 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;600&display=swap" rel="stylesheet">
 <script src="dogecoin.java"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
-<header class="header" id="myHeader"><a href="https://dogecoin.com"><img id="logo" src="img/ony3qesa3ebx.png" alt="Picture of Buff Doge"></a><a href="index.html"><h1>Doge Market</h1></a><div id="dogevalue"></div>
+<header class="header" id="myHeader"><a href="https://dogecoin.com"><img id="logo" src="img/ony3qesa3ebx.png" alt="Picture of Buff Doge"></a><a href="index.html"><h1>Doge Market</h1></a>
 
 </header>
 <nav>
     <ul>
-        <il><a href="">Buy Dogecoin</a></il>
-        <il><a href="">Buy Dogecoin</a></il>
-        <il><a href="">Buy Dogecoin</a></il>
-        <il><a href="">Buy Dogecoin</a></il>
+     <div class="dropdown">   <il><button onclick="myfunction()" class="dropbtn">Buy Dogecoin</button></il>
+    <div id="mydropdown" class="dropdown-content">
+        <a href="">1</a>
+        <a href="">2</a>
+        <a href="">3</a>
+    </div>
+        </div>
+        <div class="dropdown">
+            <il><button onclick="myfunction()" class="dropbtn">Buy Dogecoin</button></il>
+            <div id="mydropdown" class="dropdown-content">
+                <a href="">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <il><button onclick="myfunction()" class="dropbtn">Buy Dogecoin</button></il>
+            <div id="mydropdown" class="dropdown-content">
+                <a href="">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <il><button onclick="myfunction()" class="dropbtn">Buy Dogecoin</button></il>
+            <div id="mydropdown" class="dropdown-content">
+                <a href="">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+            </div>
+        </div>
     </ul>
 </nav>
 <body>
@@ -96,7 +125,29 @@
             </div>
         </a>
     </div>
+    <script>
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    
+    window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+    </script>
     </main>
+    
+    <div class="cart-menu"><button onclick=""><i class="fas fa-shopping-cart"></i></button></div>
+    
 </body>
 <footer>
     <div><img src="img/805-8053783_accept-dogecoin-logo.png" alt=""></div>
