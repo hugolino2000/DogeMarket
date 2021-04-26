@@ -85,7 +85,7 @@ transition: 1000ms;
 
  
 }
-#information{
+.information{
   font-size: 0;
    font-family: 'Chakra Petch', sans-serif;
     text-align: center;
@@ -111,7 +111,7 @@ transition: 1000ms;
   transition: 1500ms;
   cursor: pointer;
 }
-.item-showcase:hover #information{
+.item-showcase:hover .information{
     font-size: medium;
     transition: 0.5s;
 }
