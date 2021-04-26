@@ -8,7 +8,7 @@ body{
  justify-content: center;
  background-color: #cb9800;
  border-bottom:#e1b303 solid 0.2rem ;
- border-radius:  2rem;
+ border-bottom-left-radius:  2rem;
  overflow: hidden;
  object-fit: contain;
  padding: 2rem;
@@ -25,7 +25,14 @@ top: 9.5rem;
 z-index: 2;
 background-color: burlywood;
 margin: 0;
-padding: 0;
+padding: 0.1rem;
+margin-left: 1.8rem;
+border-bottom-left-radius: 2rem;
+
+}
+ul{
+  display: flex;
+ justify-content: space-around;
 }
 
 main{
@@ -46,7 +53,7 @@ h1{
     transition: 500ms;
 }
 h1:hover{
-font-size: 2.5rem;
+font-size: 2.25rem;
 transition: 1000ms;
 }
    
@@ -58,15 +65,15 @@ transition: 1000ms;
 }
 #logo:hover{
     
-    height: 7rem;
-    width: 7rem;
+    height: 6rem;
+    width: 6rem;
     transition: 1000ms;
 }
 
 .shop-container{
   display: grid;
-  grid-template-columns: repeat(auto-fill, 24vw );
-  grid-template-rows: repeat(auto-fill, 50vh);
+  grid-template-columns: repeat(auto-fill,minmax(6vw, 24vw));
+  grid-template-rows: repeat(auto-fill, minmax(12.5vh, 50vh));
   object-fit: cover;
   break-inside: avoid;
   position: relative;
@@ -78,28 +85,46 @@ transition: 1000ms;
 
  
 }
+#information{
+  font-size: 0;
+   font-family: 'Chakra Petch', sans-serif;
+    text-align: center;
+    color: black;
+}
 .item-showcase{
   object-fit: fill;
   height: 50vh;
-  border-right: solid #cb9800 1rem;
-  border-bottom: solid #cb9800 1rem;
+  border-right: solid #cb9800 0.1rem;
+  border-bottom: solid #cb9800 0.1rem;
   justify-self: stretch;
-  border: solid #e1b303 0.1rem;
+  border: solid #e1b303 0.2rem;
   border-radius: 1.5rem;
   border-left: transparent black 0.1rem;
   border-top: transparent black 0.1rem;
   overflow: hidden;
-  
+  transition: 1s;
 
 }
 .item-showcase:hover{
-    border-left: solid black 0.1rem;
-  border-top: solid black 0.1rem;
+    border-left: solid black 0.25rem;
+  border-top: solid black 0.25rem;
   transition: 1500ms;
+  cursor: pointer;
+}
+.item-showcase:hover #information{
+    font-size: medium;
+    transition: 0.5s;
 }
 .item-showcase img{
-  width: 10vw;
-  height: 20vh;
+  width: 23vw;
+  height: 40vh;
+  transition: 1s;
+  align-self: center;
+}
+.item-showcase:hover img {
+  width: 24vw;
+  height: 41vh;
+  transition: 1s;
 }
 footer{
   background-color: black;
@@ -110,10 +135,14 @@ footer img{
   width: 55vh;
 }
 a{
+   font-family: 'Chakra Petch', sans-serif;
   text-decoration: none;
+  color: black;
+  font-size: 1.25rem;
 }
 a:link{
   text-decoration: none;
+  
 }
 a:visited{
   text-decoration: none;
