@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doge Market</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <link rel="icon" sizes="300x300" href="img/ony3qesa3ebx.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;600&display=swap" rel="stylesheet">
+    <script src="dogecoin.java"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<header class="header" id="myHeader"><a href="https://dogecoin.com"><img id="logo" src="img/ony3qesa3ebx.png"
+            alt="Picture of Buff Doge"></a><a href="index.html">
+        <h1>Doge Market</h1>
+    </a>
+
+</header>
+<nav>
+    <ul>
+        <div class="dropdown">
+            <il><a href="">Dogecoin</a><button onclick="myfunction()" class="dropbtn"><i
+                        class="fas fa-chevron-down"></i></button></il>
+            <div id="mydropdown" class="dropdown-content">
+                <a href="buydogecoin.html">Buy Dogecoin</a>
+                <a href="https://dogecoin.com">Dogecoin Website</a>
+                <a href="">History of the Dogecoin</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <il><a href="">Shop</a><button onclick="myfunction()" class="dropbtn"><i
+                        class="fas fa-chevron-down"></i></button></il>
+            <div id="mydropdown" class="dropdown-content">
+                <a href="">Clothes</a>
+                <a href="">Accessories</a>
+                <a href="">Other Products</a>
+            </div>
+        </div>
+
+
+        <il><a href="donate.html">Donate</a></il>
+        <il><a href="aboutus.html">About Us</a></il>
+
+
+
+    </ul>
+</nav>
+
+<body>
+    <main>
+      <div class="about-us-div">
+        <h1>About Us</h1>
+<h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore quam non laborum! Ad exercitationem perspiciatis, laboriosam eveniet possimus asperiores reiciendis facilis debitis vitae ratione perferendis accusantium quasi reprehenderit esse fugiat, sequi nobis, illum repellat incidunt? Inventore ad temporibus delectus magnam libero quia aliquid nobis distinctio necessitatibus ea. Eius animi facere voluptas consequatur itaque quos perferendis laudantium excepturi tempore, nihil deleniti consequuntur.</h3>      
+    </div>
+        <script>
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+
+            window.onclick = function (event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    var icon = document.getElementsByClassName("fas fa-chevron-down")
+
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+
+            function cartFunction() {
+                document.getElementsByClassName("item-showcase");
+            }
+        </script>
+    </main>
+
+    <div class="cart-menu"><button onclick=""><i class="fas fa-shopping-cart"></i></button></div>
+
+</body>
+<footer>
+    <div><img src="img/805-8053783_accept-dogecoin-logo.png" alt=""></div>
+</footer>
+
+</html>

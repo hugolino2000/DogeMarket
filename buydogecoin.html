@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doge Market</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <link rel="icon" sizes="300x300" href="img/ony3qesa3ebx.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;600&display=swap" rel="stylesheet">
+    <script src="dogecoin.java"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<header class="header" id="myHeader"><a href="https://dogecoin.com"><img id="logo" src="img/ony3qesa3ebx.png"
+            alt="Picture of Buff Doge"></a><a href="index.html">
+        <h1>Doge Market</h1>
+    </a>
+
+</header>
+<nav>
+    <ul>
+        <div class="dropdown">
+            <il><a href="">Dogecoin</a><button onclick="myfunction()" class="dropbtn"><i
+                        class="fas fa-chevron-down"></i></button></il>
+            <div id="mydropdown" class="dropdown-content">
+                <a href="buydogecoin.html">Buy Dogecoin</a>
+                <a href="https://dogecoin.com">Dogecoin Website</a>
+                <a href="">History of the Dogecoin</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <il><a href="">Shop</a><button onclick="myfunction()" class="dropbtn"><i
+                        class="fas fa-chevron-down"></i></button></il>
+            <div id="mydropdown" class="dropdown-content">
+                <a href="">Clothes</a>
+                <a href="">Accessories</a>
+                <a href="">Other Products</a>
+            </div>
+        </div>
+
+
+        <il><a href="donate.html">Donate</a></il>
+        <il><a href="aboutus.html">About Us</a></il>
+
+
+
+    </ul>
+</nav>
+
+<body>
+    <main>
+      
+    <div class="information-dogecoin">
+      <div class="dogecoin-start"><h1>Dogecoin</h1>
+    <h3>Dogecoin is an open source peer-to-peer digital currency, favored by Shiba Inus worldwide.</h3></div> 
+    
+
+       <div class="wallet-information"><h2>How to buy Dogecoin</h2>
+    
+    <p>You have to sync with the blockchain to use Dogecoin. MultiDoge is a "light" wallet. It syncs with the blockchain by
+        "skimming" through the blockchain, providing fast sync times. Dogecoin Core, on the other hand, is a "full" wallet.
+        It
+        syncs by downloading it, providing a solid-working Dogecoin wallet.</p></div> 
+        <img src="/img/doge.2214a63a (1).png" alt="" class="shiba">
+        <img src="/img/doge.png" alt="" class="dogewallet">
+
+        </div>
+    
+        <script>
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+
+            window.onclick = function (event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    var icon = document.getElementsByClassName("fas fa-chevron-down")
+
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+
+            function cartFunction() {
+                document.getElementsByClassName("item-showcase");
+            }
+        </script>
+    </main>
+
+
+</body>
+<footer>
+    <div><img src="img/805-8053783_accept-dogecoin-logo.png" alt=""></div>
+</footer>
+
+</html>

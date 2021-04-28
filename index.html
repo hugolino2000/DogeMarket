@@ -18,53 +18,53 @@
 </header>
 <nav>
     <ul>
-     <div class="dropdown">   <il><button onclick="myfunction()" class="dropbtn">Buy Dogecoin</button></il>
+     <div class="dropdown">   <il><a href="">Dogecoin</a><button onclick="myfunction()" class="dropbtn"><i class="fas fa-chevron-down"></i></button></il>
     <div id="mydropdown" class="dropdown-content">
-        <a href="">1</a>
-        <a href="">2</a>
-        <a href="">3</a>
+        <a href="buydogecoin.html">Buy Dogecoin</a>
+        <a href="https://dogecoin.com">Dogecoin Website</a>
+        <a href="">History of the Dogecoin</a>
     </div>
         </div>
         <div class="dropdown">
-            <il><button onclick="myfunction()" class="dropbtn">Buy Dogecoin</button></il>
+            <il><a href="">Shop</a><button onclick="myfunction()" class="dropbtn"><i
+                        class="fas fa-chevron-down"></i></button></il>
             <div id="mydropdown" class="dropdown-content">
-                <a href="">1</a>
-                <a href="">2</a>
-                <a href="">3</a>
+                <a href="">Clothes</a>
+                <a href="">Accessories</a>
+                <a href="">Other Products</a>
             </div>
         </div>
-        <div class="dropdown">
-            <il><button onclick="myfunction()" class="dropbtn">Buy Dogecoin</button></il>
-            <div id="mydropdown" class="dropdown-content">
-                <a href="">1</a>
-                <a href="">2</a>
-                <a href="">3</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <il><button onclick="myfunction()" class="dropbtn">Buy Dogecoin</button></il>
-            <div id="mydropdown" class="dropdown-content">
-                <a href="">1</a>
-                <a href="">2</a>
-                <a href="">3</a>
-            </div>
-        </div>
+  
+       
+        <il><a href="donate.html">Donate</a></il>
+        <il><a href="aboutus.html">About Us</a></il>
+
+    
+  
     </ul>
 </nav>
 <body>
     <main>
+        <div class="shop-information">
+            <h2>Welcom To Dogemarket</h2>
+            <h3>Here you can buy alot of things using Dogecoin!</h3>
+        
+        
+        </div>
     <div class="shop-container">
        <a href=""> <div class="item-showcase">
             <img src="img/5c106e7f7095aef477091236a41d3d57.png" alt="">
             <div class="information">
-                <h3>Price: 150$</h3>
+                <h3>Buff Dogo</h3>
+                <h4>Price: 150$</h4>
             </div>
         </div></a>
         <a href="">
             <div class="item-showcase">
                 <img src="img/5c106e7f7095aef477091236a41d3d57.png" alt="">
                 <div class="information">
-                    <h3>Price: 150$</h3>
+                    <h3>Buff Dogo</h3>
+                    <h4>Price: 150$</h4>
                 </div>
             </div>
         </a>
@@ -72,7 +72,8 @@
             <div class="item-showcase">
                 <img src="img/5c106e7f7095aef477091236a41d3d57.png" alt="">
                 <div class="information">
-                    <h3>Price: 150$</h3>
+                    <h3>Buff Dogo</h3>
+                    <h4>Price: 150$</h4>
                 </div>
             </div>
         </a>
@@ -80,7 +81,8 @@
             <div class="item-showcase">
                 <img src="img/5c106e7f7095aef477091236a41d3d57.png" alt="">
                 <div class="information">
-                    <h3>Price: 150$</h3>
+                    <h3>Buff Dogo</h3>
+                    <h4>Price: 150$</h4>
                 </div>
             </div>
         </a>
@@ -88,7 +90,8 @@
             <div class="item-showcase">
                 <img src="img/5c106e7f7095aef477091236a41d3d57.png" alt="">
                 <div class="information">
-                    <h3>Price: 150$</h3>
+                    <h3>Buff Dogo</h3>
+                    <h4>Price: 150$</h4>
                 </div>
             </div>
         </a>
@@ -96,7 +99,8 @@
             <div class="item-showcase">
                 <img src="img/5c106e7f7095aef477091236a41d3d57.png" alt="">
                 <div class="information">
-                    <h3>Price: 150$</h3>
+                    <h3>Buff Dogo</h3>
+                    <h4>Price: 150$</h4>
                 </div>
             </div>
         </a>
@@ -104,26 +108,21 @@
             <div class="item-showcase">
                 <img src="img/5c106e7f7095aef477091236a41d3d57.png" alt="">
                 <div class="information">
-                    <h3>Price: 150$</h3>
+                    <h3>Buff Dogo</h3>
+                    <h4>Price: 150$</h4>
                 </div>
             </div>
         </a>
-        <a href="">
+        <a href="" onclick="cartFunction()">
             <div class="item-showcase">
                 <img src="img/5c106e7f7095aef477091236a41d3d57.png" alt="">
                 <div class="information">
-                    <h3>Price: 150$</h3>
+                    <h3>Buff Dogo</h3>
+                    <h4>Price: 150$</h4>
                 </div>
             </div>
         </a>
-        <a href="">
-            <div class="item-showcase">
-                <img src="img/5c106e7f7095aef477091236a41d3d57.png" alt="">
-                <div class="information">
-                    <h3>Price: 150$</h3>
-                </div>
-            </div>
-        </a>
+        
     </div>
     <script>
     function myFunction() {
@@ -135,6 +134,8 @@
         if (!event.target.matches('.dropbtn')) {
             var dropdowns = document.getElementsByClassName("dropdown-content");
             var i;
+            var icon = document.getElementsByClassName("fas fa-chevron-down")
+
             for (i = 0; i < dropdowns.length; i++) {
                 var openDropdown = dropdowns[i];
                 if (openDropdown.classList.contains('show')) {
@@ -142,6 +143,10 @@
                 }
             }
         }
+    }
+
+    function cartFunction(){
+        document.getElementsByClassName("item-showcase");
     }
     </script>
     </main>
