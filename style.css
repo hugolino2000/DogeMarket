@@ -84,6 +84,20 @@ main{
    height: 65vh;
    align-self: auto; 
 }
+@keyframes move {
+	to {
+		background-position: 4500vh;
+	}
+}
+.information-dogecoin .shiba-citat{
+  grid-area: 3 / 3 / 6 / 4 ;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+ background-image: 
+    linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
+  animation: move 35s linear infinite;
+}
 .information-dogecoin{
   display: grid;
   grid-template-columns: repeat(4, 30vw);
@@ -251,16 +265,20 @@ a:visited{
   z-index: 1;
   font-family: 'Chakra Petch', sans-serif;
   background-color: rgba(233, 192, 140, 0.76);
-  border-radius: 0.25rem;
+  border-radius: 0.15rem;
+  padding: 0.5rem;
   transition: 1s;
 
 }
 .dropdown-content a{
   display: block;
   font-size: 1rem;
+  margin-bottom: 0.5rem;
+  transition: 0.5s;
 }
 .dropdown-content a:hover{
   background-color:rgb(202, 168, 123);
+  transition: 0.2s;
   
 }
 .dropdown:hover .dropdown-content {
